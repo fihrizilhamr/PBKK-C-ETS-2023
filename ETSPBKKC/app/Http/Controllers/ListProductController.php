@@ -19,8 +19,9 @@ class ListProductController extends Controller
         $product = Product::find($id);
         $jenis = Jenis::all();
         $kondisi = Kondisi::all();
-        return view('edit_product', compact('product'), compact('jenis'), compact('kondisi'));
+        return view('edit_product', compact('product', 'jenis', 'kondisi'));
     }
+    
 
     public function update(Request $request, $id)
     {

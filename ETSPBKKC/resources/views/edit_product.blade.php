@@ -43,16 +43,16 @@ https://www.youtube.com/watch?v=7uEqQx4S50E-->
             <select name="Jenis" required>
                 <option value="" disabled selected>Pilih Jenis</option>
                 @foreach($jenis as $jenis_barang)
-                <option value="{{ $jenis_barang->Jenis }}">{{ $jenis_barang->Jenis }}</option>
+                    <option value="{{ $jenis_barang->Jenis }}">{{ $jenis_barang->Jenis }}</option>
                 @endforeach
             </select>
             <br>
 
             <label for="Kondisi">Kondisi:</label>
             <select name="Kondisi" required>
-                <option value="" disabled selected>Pilih Jenis</option>
+                <option value="" disabled selected>Pilih Kondisi</option>
                 @foreach($kondisi as $kondisi_barang)
-                <option value="{{ $kondisi_barang->Kondisi }}">{{ $kondisi_barang->Kondisi }}</option>
+                    <option value="{{ $kondisi_barang->Kondisi }}">{{ $kondisi_barang->Kondisi }}</option>
                 @endforeach
             </select>
             <br>
